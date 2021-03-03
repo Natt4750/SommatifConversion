@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="766.0" prefWidth="1196.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ConversionController">
+   <children>
+      <TabPane prefHeight="766.0" prefWidth="1196.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+            <Tab text="Description">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="lblDesc" layoutY="1.0" prefHeight="677.0" prefWidth="1196.0" text="                             BIENVENUE A MON CONVERTISEUR!" textAlignment="CENTER" />
+                        <Button fx:id="btnExit1" layoutX="958.0" layoutY="535.0" mnemonicParsing="false" onAction="#fermer" text="Exiter" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+          <Tab text="Monnaie">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="txtCAD" layoutX="152.0" layoutY="44.0" />
+                        <TextField fx:id="txtUSD" layoutX="152.0" layoutY="153.0" />
+                        <TextField fx:id="txtEU" layoutX="152.0" layoutY="270.0" />
+                        <Label layoutX="32.0" layoutY="56.0" text="CAD" />
+                        <Label layoutX="32.0" layoutY="165.0" text="USD" />
+                        <Label layoutX="32.0" layoutY="282.0" text="EU" />
+                        <Button fx:id="btnConvertir1" layoutX="404.0" layoutY="382.0" mnemonicParsing="false" onAction="#Convert1" text="Convertir" />
+                        <Button fx:id="btnExit2" layoutX="958.0" layoutY="535.0" mnemonicParsing="false" onAction="#fermer" text="Exiter" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Longeurs">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="btnExit3" layoutX="958.0" layoutY="535.0" mnemonicParsing="false" onAction="#fermer" text="Exiter" />
+                        <TextField fx:id="txtMetre" layoutX="152.0" layoutY="44.0" />
+                        <TextField fx:id="txtPouce" layoutX="152.0" layoutY="156.0" />
+                        <TextField fx:id="txtPieds" layoutX="152.0" layoutY="270.0" />
+                        <Label layoutX="32.0" layoutY="56.0" text="Metre" />
+                        <Label layoutX="32.0" layoutY="168.0" text="Pouce" />
+                        <Label layoutX="32.0" layoutY="282.0" text="Pieds" />
+                        <Button fx:id="btnConvertir2" layoutX="404.0" layoutY="379.0" mnemonicParsing="false" text="Convertir" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+          <Tab text="Energie">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="btnExit4" layoutX="958.0" layoutY="535.0" mnemonicParsing="false" onAction="#fermer" text="Exiter" />
+                        <TextField fx:id="txtJoule" layoutX="152.0" layoutY="44.0" />
+                        <TextField fx:id="txtCalGram" layoutX="152.0" layoutY="150.0" />
+                        <TextField fx:id="txtKiloJoule" layoutX="152.0" layoutY="256.0" />
+                        <Button fx:id="btnConvertir3" layoutX="404.0" layoutY="368.0" mnemonicParsing="false" text="Convertir" />
+                        <Label layoutX="28.0" layoutY="56.0" text="Joule" />
+                        <Label layoutY="136.0" prefHeight="105.0" prefWidth="155.0" text="Cal-Gram" />
+                        <Label layoutX="7.0" layoutY="268.0" text="KiloJoule" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
