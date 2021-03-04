@@ -215,7 +215,8 @@ public class ConversionController {
     	{
     		if(!newValue.matches("^[0-9](\\.[0-9]+)?$)"))
     				{
-    					a.setText(newValue.replaceAll("[^\\d*\\.]", ""));
+    					
+    			a.setText(newValue.replaceAll("[^\\d*\\.]", ""));
     				}
     	});
     	
