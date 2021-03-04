@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
@@ -13,7 +15,10 @@
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <Label fx:id="lblDesc" layoutY="1.0" prefHeight="677.0" prefWidth="1196.0" text="                             BIENVENUE A MON CONVERTISEUR!" textAlignment="CENTER" />
+                        <Label fx:id="lblDesc" graphicTextGap="0.0" layoutX="-239.0" layoutY="251.0" prefHeight="145.0" prefWidth="1362.0" text="                             BIENVENUE A MON CONVERTISEUR!" textFill="#d200ff">
+                           <font>
+                              <Font size="52.0" />
+                           </font></Label>
                         <Button fx:id="btnExit1" layoutX="958.0" layoutY="535.0" mnemonicParsing="false" onAction="#fermer" text="Exiter" />
                      </children>
                   </AnchorPane>
@@ -31,6 +36,7 @@
                         <Label layoutX="32.0" layoutY="282.0" text="EU" />
                         <Button fx:id="btnConvertir1" layoutX="404.0" layoutY="382.0" mnemonicParsing="false" onAction="#Convert1" text="Convertir" />
                         <Button fx:id="btnExit2" layoutX="958.0" layoutY="535.0" mnemonicParsing="false" onAction="#fermer" text="Exiter" />
+                        <Button layoutX="212.0" layoutY="382.0" mnemonicParsing="false" onAction="#ClearMonnaie" text="Effacer" />
                      </children>
                   </AnchorPane>
             </content>
@@ -46,7 +52,8 @@
                         <Label layoutX="32.0" layoutY="56.0" text="Metre" />
                         <Label layoutX="32.0" layoutY="168.0" text="Pouce" />
                         <Label layoutX="32.0" layoutY="282.0" text="Pieds" />
-                        <Button fx:id="btnConvertir2" layoutX="404.0" layoutY="379.0" mnemonicParsing="false" text="Convertir" />
+                        <Button fx:id="btnConvertir2" layoutX="404.0" layoutY="379.0" mnemonicParsing="false" onAction="#Convert2" text="Convertir" />
+                        <Button layoutX="209.0" layoutY="379.0" mnemonicParsing="false" onAction="#ClearMesures" text="Effacer" />
                      </children>
                   </AnchorPane>
               </content>
@@ -59,10 +66,11 @@
                         <TextField fx:id="txtJoule" layoutX="152.0" layoutY="44.0" />
                         <TextField fx:id="txtCalGram" layoutX="152.0" layoutY="150.0" />
                         <TextField fx:id="txtKiloJoule" layoutX="152.0" layoutY="256.0" />
-                        <Button fx:id="btnConvertir3" layoutX="404.0" layoutY="368.0" mnemonicParsing="false" text="Convertir" />
+                        <Button fx:id="btnConvertir3" layoutX="404.0" layoutY="368.0" mnemonicParsing="false" onAction="#Convert3" text="Convertir" />
                         <Label layoutX="28.0" layoutY="56.0" text="Joule" />
                         <Label layoutY="136.0" prefHeight="105.0" prefWidth="155.0" text="Cal-Gram" />
                         <Label layoutX="7.0" layoutY="268.0" text="KiloJoule" />
+                        <Button layoutX="203.0" layoutY="368.0" mnemonicParsing="false" onAction="#ClearEnergie" text="Effacer" />
                      </children>
                   </AnchorPane>
             </content>
